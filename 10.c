@@ -2,21 +2,15 @@
 
 int main(){
 
-//O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor
+    /* O custo de um carro novo ao consumidor é a soma do custo de fábrica com a porcentagem do distribuidor e dos impostos (aplicados  ao custo de fábrica). Supondo que o percentual do distribuidor seja de 28% e os impostos de 45%, escrever um algoritmo para ler o custo de fábrica de um carro, calcular e escrever o custo final ao consumidor*/
 
- int valorCarro;
- int custoFabrica = 28;
- int impostos = 45; 
- int valorFinal;
+    float custoFabrica, distribuidor = 0.28,
+    imposto = 0.45, custoFinal;
 
- printf("Digite o valor do carro: ");
- scanf("%d", &valorCarro);
+    printf("Digite o custo de fabrica: ");
+    scanf("%f", custoFabrica);
 
- valorFinal = valorCarro + (valorCarro * ( custoFabrica /100)) + (valorCarro * ( impostos /100));
+    custoFinal = (custoFabrica * distribuidor) + (custoFabrica * imposto) + custoFabrica;
 
- printf("O valor total do carro e: %d", valorFinal);
-
-
-
-return 0; 
+    return 0;
 }
